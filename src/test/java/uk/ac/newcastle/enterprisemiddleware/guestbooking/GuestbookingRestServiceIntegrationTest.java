@@ -1,28 +1,16 @@
 package uk.ac.newcastle.enterprisemiddleware.guestbooking;
 import io.quarkus.test.common.QuarkusTestResource;
-import io.quarkus.test.common.http.TestHTTPEndpoint;
 import io.quarkus.test.h2.H2DatabaseTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.*;
 import uk.ac.newcastle.enterprisemiddleware.booking.Booking;
-import uk.ac.newcastle.enterprisemiddleware.contact.ContactRestService;
 import uk.ac.newcastle.enterprisemiddleware.flight.Flight;
-import uk.ac.newcastle.enterprisemiddleware.flight.FlightRestService;
-import uk.ac.newcastle.enterprisemiddleware.guestbooking.GuestBooking;
-import uk.ac.newcastle.enterprisemiddleware.guestbooking.GuestBookingRestService;
 import uk.ac.newcastle.enterprisemiddleware.customer.*;
-import uk.ac.newcastle.enterprisemiddleware.booking.*;
-
-import java.util.Calendar;
 import java.util.Date;
-
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.when;
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 @QuarkusTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
