@@ -1,6 +1,7 @@
 package uk.ac.newcastle.enterprisemiddleware.customer;
 
 import uk.ac.newcastle.enterprisemiddleware.area.InvalidAreaCodeException;
+
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -8,6 +9,7 @@ import javax.ws.rs.ClientErrorException;
 import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.logging.Logger;
+
 
 @Dependent
 public class CustomerService {
@@ -53,7 +55,6 @@ public class CustomerService {
         }
         return crud.createCustomer(customer);
     }
-
 
     /**
      * <p>Deletes the provided Customer object from the application database if found there.<p/>

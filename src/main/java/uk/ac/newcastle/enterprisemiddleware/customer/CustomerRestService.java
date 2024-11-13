@@ -6,7 +6,6 @@ import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponses;
 import uk.ac.newcastle.enterprisemiddleware.util.RestServiceException;
-
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.persistence.NoResultException;
@@ -144,61 +143,5 @@ public class CustomerRestService {
         log.info("createCustomer completed. Customer = " + Customer);
         return builder.build();
     }
-
-
-    /**
-     * <p>Deletes a customer using the ID provided. If the ID is not present then nothing can be deleted.</p>
-     *
-     * <p>Will return a JAX-RS response with either 204 NO CONTENT or with a map of fields, and related errors.</p>
-     *
-     * @param id The Long parameter value provided as the id of the Customer to be deleted
-     * @return A Response indicating the outcome of the delete operation
-     */
-    /* @DELETE
-    @Path("/{id:[0-9]+}")
-    @Operation(description = "Delete a Contact from the database")
-    @APIResponses(value = {
-            @APIResponse(responseCode = "204", description = "The customer has been successfully deleted"),
-            @APIResponse(responseCode = "400", description = "Invalid Customer id supplied"),
-            @APIResponse(responseCode = "404", description = "Customer with id not found"),
-            @APIResponse(responseCode = "500", description = "An unexpected error occurred whilst processing the request")
-    })
-    @Transactional
-    public Response deleteContact(
-            @Parameter(description = "Id of Customer to be deleted", required = true)
-            @Schema(minimum = "0")
-            @PathParam("id")
-            long id) {
-
-        Response.ResponseBuilder builder;
-
-        Customer customer = service.findAllCustomersById(id);
-        if (customer == null) {
-            // Verify that the customer exists. Return 404, if not present.
-            throw new RestServiceException("No Customer with the id " + id + " was found!", Response.Status.NOT_FOUND);
-        }
-
-        try {
-            service.delete(customer);
-
-            builder = Response.noContent();
-
-        } catch (Exception e) {
-            // Handle generic exceptions
-            throw new RestServiceException(e);
-        }
-        log.info("deleteCustomer completed. Customer = " + customer);
-        return builder.build();
-    }
-
-        */
-
-
-
-
-
-
-
-
 
 }

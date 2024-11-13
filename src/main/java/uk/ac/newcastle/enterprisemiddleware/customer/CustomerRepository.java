@@ -3,6 +3,7 @@ package uk.ac.newcastle.enterprisemiddleware.customer;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.inject.Singleton;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 import java.util.List;
@@ -27,7 +28,6 @@ public class CustomerRepository {
         TypedQuery<Customer> namedQuery = em.createNamedQuery(Customer.FIND_ALL, Customer.class);
         return namedQuery.getResultList();
     }
-
     /**
      * <p>Returns a single Customer object, specified by a Long id.<p/>
      *
@@ -37,7 +37,7 @@ public class CustomerRepository {
     Customer findAllCustomersById(Long id) {
         return em.find(Customer.class, id);
     }
-//
+
     /**
      * <p>Returns a single Customer object, specified by a String email.</p>
      *
@@ -50,7 +50,7 @@ public class CustomerRepository {
         TypedQuery<Customer> query = em.createNamedQuery(Customer.FIND_BY_EMAIL, Customer.class).setParameter("email", email);
         return query.getSingleResult();
     }
-//
+
     /**
      * <p>Persists the provided Customer object to the application database using the EntityManager.</p>
      *
@@ -66,7 +66,7 @@ public class CustomerRepository {
         em.persist(customer);
         return customer;
     }
-//
+
     /**
      * <p>Deletes the provided Customer object from the application database if found there</p>
      * @param customer The Customer object to be removed from the application database

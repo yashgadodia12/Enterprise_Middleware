@@ -2,8 +2,6 @@ package uk.ac.newcastle.enterprisemiddleware.travelagent;
 
 import io.smallrye.common.constraint.NotNull;
 import uk.ac.newcastle.enterprisemiddleware.booking.*;
-import uk.ac.newcastle.enterprisemiddleware.customer.Customer;
-import uk.ac.newcastle.enterprisemiddleware.flight.*;
 import uk.ac.newcastle.enterprisemiddleware.hotel.*;
 import uk.ac.newcastle.enterprisemiddleware.taxi.TaxiBooking;
 

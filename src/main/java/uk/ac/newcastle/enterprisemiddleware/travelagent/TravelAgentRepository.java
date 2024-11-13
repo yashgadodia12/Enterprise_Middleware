@@ -1,18 +1,10 @@
 package uk.ac.newcastle.enterprisemiddleware.travelagent;
 
-import uk.ac.newcastle.enterprisemiddleware.customer.Customer;
-import uk.ac.newcastle.enterprisemiddleware.flight.*;
-import uk.ac.newcastle.enterprisemiddleware.hotel.*;
-
-import java.io.Serializable;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
 import javax.validation.ConstraintViolationException;
 import java.util.List;
 import java.util.logging.Logger;

@@ -1,11 +1,7 @@
 package uk.ac.newcastle.enterprisemiddleware.hotel;
 
 import org.eclipse.microprofile.openapi.annotations.Operation;
-import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
-import uk.ac.newcastle.enterprisemiddleware.flight.Flight;
-
-import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

@@ -1,4 +1,5 @@
 package uk.ac.newcastle.enterprisemiddleware.taxi;
+
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 /**

@@ -9,15 +9,15 @@ import javax.validation.ValidationException;
  */
 public class InvalidNameException extends ValidationException {
 
-  public InvalidNameException(String message) {
-    super(message);
-  }
+    public InvalidNameException(String message) {
+        super(message);
+    }
 
-  public InvalidNameException(String message, Throwable cause) {
-    super(message, cause);
-  }
+    public InvalidNameException(String message, Throwable cause) {
+        super(message, cause);
+    }
 
-  public InvalidNameException(Throwable cause) {
-    super(cause);
-  }
+    public InvalidNameException(Throwable cause) {
+        super(cause);
+    }
 }

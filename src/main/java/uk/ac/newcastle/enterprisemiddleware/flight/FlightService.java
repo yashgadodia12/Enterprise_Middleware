@@ -84,7 +84,6 @@ public class FlightService {
         } else {
             log.info("delete() - No ID was found so can't Delete.");
         }
-
         return deletedFlight;
     }
 

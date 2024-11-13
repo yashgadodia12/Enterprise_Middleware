@@ -1,7 +1,4 @@
 package uk.ac.newcastle.enterprisemiddleware.hotel;
-import uk.ac.newcastle.enterprisemiddleware.booking.*;
-import uk.ac.newcastle.enterprisemiddleware.customer.Customer;
-
 
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;

@@ -2,7 +2,6 @@ package uk.ac.newcastle.enterprisemiddleware.hotel;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.Objects;
 
 /**
  * <p>Simple POJO representing HotelBooking objects</p>

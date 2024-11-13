@@ -12,7 +12,10 @@ import java.util.List;
  *
  * @author yash
  */
-
+/*
+ * The @NamedQueries included here are for searching against the table that reflects this object.  This is the most efficient
+ * form of query in JPA though is it more error prone due to the syntax being in a String.  This makes it harder to debug.
+ */
 @Entity
 @NamedQueries({
         @NamedQuery(name = Customer.FIND_ALL, query = "SELECT c FROM Customer c ORDER BY c.name ASC"),
@@ -40,8 +43,6 @@ public class Customer implements Serializable {
     @Column(name = "name")
     private String name;
 
-
-
     @NotNull
     @NotEmpty
     @Email(message = "The email address must be in the format of name@domain.com")
@@ -51,9 +52,6 @@ public class Customer implements Serializable {
     @Pattern(regexp = "^0[0-9]{10}$",message = "^0[0-9]{10}$ format")
     @Column(name = "phone_number")
     private String phoneNumber;
-
-
-
 
     @JsonIgnore
     @OneToMany(mappedBy = "customer", cascade = CascadeType.REMOVE)
@@ -82,6 +80,7 @@ public class Customer implements Serializable {
     public void setName(String name){
         this.name=name;
     }
+
     public String getEmail() {
         return email;
     }

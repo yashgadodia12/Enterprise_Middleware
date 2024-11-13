@@ -2,7 +2,6 @@ package uk.ac.newcastle.enterprisemiddleware.guestbooking;
 
 import uk.ac.newcastle.enterprisemiddleware.booking.*;
 import uk.ac.newcastle.enterprisemiddleware.customer.*;
-import uk.ac.newcastle.enterprisemiddleware.flight.*;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
@@ -13,7 +12,6 @@ import javax.transaction.*;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-
 
 @Path("/api")
 @Consumes(MediaType.APPLICATION_JSON)

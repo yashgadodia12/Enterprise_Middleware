@@ -1,5 +1,6 @@
 package uk.ac.newcastle.enterprisemiddleware.flight;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.smallrye.common.constraint.NotNull;
 import uk.ac.newcastle.enterprisemiddleware.booking.Booking;

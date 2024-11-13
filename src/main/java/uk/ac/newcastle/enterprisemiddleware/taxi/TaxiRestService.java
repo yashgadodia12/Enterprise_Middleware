@@ -2,8 +2,6 @@ package uk.ac.newcastle.enterprisemiddleware.taxi;
 
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
-import uk.ac.newcastle.enterprisemiddleware.hotel.Hotel;
-import uk.ac.newcastle.enterprisemiddleware.hotel.HotelService;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
