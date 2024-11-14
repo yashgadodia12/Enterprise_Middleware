@@ -28,7 +28,6 @@ class BookingRestServiceIntegrationTest {
     @BeforeAll
     static void setup() throws Exception {
 
-
         flight = new Flight();
         flight.setFlightNumber("M2345");
         flight.setDeparture("MUM");
@@ -39,13 +38,9 @@ class BookingRestServiceIntegrationTest {
         customer.setEmail("test@gmail.com");
         customer.setPhoneNumber("09890448159");
 
-
         Date date=new Date(2023,12,12);
         booking = new Booking();
         booking.setBookingDate(date);
-
-
-
 
     }
     @Test
