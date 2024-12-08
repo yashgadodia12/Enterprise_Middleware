@@ -19,4 +19,3 @@ You can run your application in dev mode that enables live coding using:
 =======
 # Enterprise_Middleware
 For my Enterprise Middleware coursework, I developed a Java application on OpenShift, leveraging PaaS for deployment and scalability. I built a booking system with JTA for transactions, Bean Validation, efficient data management, and RESTful APIs documented via Swagger, gaining hands-on experience in enterprise application development.
->>>>>>> 20eddc148f2ebb2a1cd46a27c0dc366fd1f5735f
