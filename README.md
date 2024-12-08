@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CSC8104 Quickstart Project
 
 This quickstart project is provided for students on the CSC8104 Enterprise Middleware module and provides a foundation for starting their coursework. Students are expected to download and build their solution within the provided project and should not aim to create a new project from scratch.
