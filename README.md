@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CSC8104 Quickstart Project
 
 This quickstart project is provided for students on the CSC8104 Enterprise Middleware module and provides a foundation for starting their coursework. Students are expected to download and build their solution within the provided project and should not aim to create a new project from scratch.
@@ -16,3 +17,7 @@ You can run your application in dev mode that enables live coding using:
 ```
 
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
+=======
+# Enterprise_Middleware
+For my Enterprise Middleware coursework, I developed a Java application on OpenShift, leveraging PaaS for deployment and scalability. I built a booking system with JTA for transactions, Bean Validation, efficient data management, and RESTful APIs documented via Swagger, gaining hands-on experience in enterprise application development.
+>>>>>>> 20eddc148f2ebb2a1cd46a27c0dc366fd1f5735f
